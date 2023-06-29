@@ -91,11 +91,10 @@ public class StringUtilities {
      * @return an identical string with characters in reverse order.
      */
     public static String reverse(String stringToReverse){
-        String str = stringToReverse;
-        String[] splStr = str.split("");
-        String strRev = "";
-        for  (int i = splStr.length -1; i>=0; i--) {
-            strRev = strRev + splStr[i];
-        } return strRev;
+        String strRev ="";
+        for (int i = stringToReverse.length() - 1; i>=0; i--) {
+            strRev = strRev + stringToReverse.charAt(i);
+        }
+        return strRev;
     }
 }
